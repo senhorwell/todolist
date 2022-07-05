@@ -1,0 +1,36 @@
+.container {
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  background-color: #6E85B7;
+
+  .form-row {
+
+    input {
+      border: none;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      height: 50px;
+      padding: 15px;
+      width: 500px;
+      outline: none;
+    }
+    button {
+      border: none;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      height: 50px;
+      width: 150px;
+      background-color: #112B3C;
+      color: white;
+      // color: #6E85B7;
+    }
+  }
+
+  .list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

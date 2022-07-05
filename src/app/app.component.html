@@ -1,14 +1,14 @@
-<h1>{{title}}</h1>
-<input type="text" placeholder="Qual a task desejada?" #task />
+<div class="container">
 
-<br>
-<br>
+  <h1>{{title}}</h1>
 
-<button (click)="addTask(task.value)">Adicione uma task</button>
+  <div class="form-row">
+    <input type="text" placeholder="Qual a task desejada?" #task />
+    <button (click)="addTask(task.value)">Adicione uma task</button>
+  </div>
 
-<br>
-<br>
-
-<ul *ngFor="let item of list">
-    <li>{{item.name}} <button (click)="removeTask(item.id)">Remove</button></li>
-</ul>
+  <div class="list">
+    <app-todo *ngFor="let item of list" [content]="item.name" (removeEvent)="removeTask(item.id)">
+    </app-todo>
+  </div>
+</div>
